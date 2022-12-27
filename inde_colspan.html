@@ -4,30 +4,34 @@
         <style>
             table th,td {
                 border: 2px solid black;
-                border_collapse :collapse;
-
+                border-style: dotted;
             }
+            th {
+  text-align: left;
+}
         </style>
     </head>
 <body>
 
     <h2 >colum to merage in to one</h2>
-    <table style="width= 100%";>
+    <table style ="width: 100%">
     <caption>Monthly bills</caption>
     <tr>
+        <!-- mearge two column and also use rowspan to merge two row -->
         <th colspan="2"> full name</th>
         <th> date</th>
     </tr>
     <tr>
         <td>Aravind</td>
         <td>Rajan</td>
+        <td>2022</td>
     </tr>
     <tr>
-        <td>2022</td>
-        <td>2023</td>
+      <td>Alvine</td>
+      <th>nettikadan</th>
+      <th>2023</th>
     </tr>
     
     </table>
 </body>
-
 </html>
