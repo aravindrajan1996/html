@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid black;
+                background-color: aqua;
+
+            }
+            li {
+                float:left;
+            }
+            li a {
+                display:block;
+                padding: 8px 16px;
+                color: blueviolet;
+                text-align: center;
+                text-decoration: 0;
+            }
+            li a:hover:not(.active) {
+
+                background-color: red;
+            }
+            li a.active {
+                color: white;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul>
+            <li><a class="active" href="#Home">HOME</a></li>
+            <li><a href="#CSS">CSS</a></li>
+            <li><a href="#HTML">HTML</a></li>
+            <li><a href="About">ABOUT</a></li>
+            </ul>
+    </body>
+</html>
