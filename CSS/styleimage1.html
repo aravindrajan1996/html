@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div.gallary {
+                border: 1px solid green;
+            }
+            div.gallary:hover{
+                border: 1px solid black;
+            }
+            div.gallery img{
+                width: 100%;
+                height:auto;
+            }
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .responsive {
+                padding: 0 6px;
+                width: 24.444;
+                float: left;
+            }
+            @media only screen and (max-width: 700px) {
+                .responsive{
+                    width: 49.999;
+                    margin: 6px 0;
+                } 
+            }
+            @media only screen and (min-width:500px) {
+                .responsive {
+                width: 100px;
+                }
+            }
+            .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        </style>
+    </head>
+    <body>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="car.jpg">
+                    <img src="car.jpg" alt="car" width="600px" height="400px">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="workplace.jpg">
+                    <img src="workplace.jpg" alt="car" width="600px" height="400px">
+                </a>
+                <div class="desc">Add a description of the image here</div>
+            </div>
+        </div>
+    </body>
+
+</html>
